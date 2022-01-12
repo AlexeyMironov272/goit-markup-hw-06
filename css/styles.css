@@ -787,10 +787,11 @@ body {
   transition-timing-function: var(--function);
 }
 
-.modal-btn:focus,
-.modal-btn:hover {
-  color: var(--accent-color);
+.modal-icon-check:hover, 
+.checkbox:focus:not(:checked) + .modal-icon-check {
+  border-color: var(--accent-color);
 }
+
 
 .close-icon {
   height: 18px;
@@ -860,6 +861,7 @@ body {
   outline: -webkit-focus-ring-color auto 0px;
 }
 
+
 .modal-textarea {
   margin: 0;
   height: 120px;
@@ -925,6 +927,7 @@ body {
 .modal-textarea:focus + .modal-icon {
   fill: var(--accent-color);
 }
+
 
 .modal-checkbox-text {
   font-size: 14px;
